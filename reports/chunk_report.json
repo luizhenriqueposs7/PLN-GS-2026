@@ -1,0 +1,30 @@
+{
+  "total_chunks": 1331,
+  "tokens_medio": 733.3,
+  "tokens_min": 12,
+  "tokens_max": 3091,
+  "por_categoria": {
+    "manual_tecnologia": 528,
+    "norma_certificacao": 674,
+    "relatorio_tecnico": 129
+  },
+  "por_subcategoria": {
+    "energia": 486,
+    "agua": 372,
+    "ambos": 473
+  },
+  "por_documento": {
+    "cresesb-manual-fv-2014": 351,
+    "fiesp-ana-reuso-edificacoes": 97,
+    "ana-reuso-industrial-v1": 67,
+    "cbic-guia-conservacao-agua": 87,
+    "cbic-guia-nbr15575": 186,
+    "gbc-brasil-casa-2017": 280,
+    "inmetro-ini-c-2022": 121,
+    "aneel-caderno-microminigeracao": 13,
+    "cbcs-aspectos-construcao-sustentavel": 7,
+    "cni-uso-racional-agua-industrial": 100,
+    "epe-atlas-eficiencia-2021": 1,
+    "artigo-aguas-cinzas-multifamiliar": 21
+  }
+}

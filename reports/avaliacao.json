@@ -1,0 +1,142 @@
+[
+  {
+    "n": 1,
+    "pergunta": "Quais usos não potáveis são indicados para o reúso de águas cinzas em edificações?",
+    "coberta": true,
+    "resposta": "[3] [4] Os principais usos não potáveis indicados para o reúso de águas cinzas em edificações são descargas de vasos sanitários, lavagem de pisos, lavagem de roupas e lavagem de veículos, conforme estabelecido na tabela 1 do Manual da FIESP (2005) e no item 5.6.4 da NBR 13.969/97 (ABNT, 1997).",
+    "fontes": [
+      "[1] FIESP/ANA/SindusCon-SP/COMASP — Conservacao e Reuso de Agua em Edificacoes",
+      "[2] Maccarini, Cauduro & Silva (UNESC/UFRGS) — O Uso de Aguas Cinzas em uma Edificacao Multifamiliar",
+      "[3] FIESP/ANA/SindusCon-SP/COMASP — Conservacao e Reuso de Agua em Edificacoes",
+      "[4] Maccarini, Cauduro & Silva (UNESC/UFRGS) — O Uso de Aguas Cinzas em uma Edificacao Multifamiliar",
+      "[5] CNI - Confederacao Nacional da Industria — O Uso Racional da Agua no Setor Industrial"
+    ],
+    "fonte_top": "FIESP/ANA/SindusCon-SP/COMASP (0.889)"
+  },
+  {
+    "n": 2,
+    "pergunta": "Como funciona o sistema de compensação de energia elétrica na micro e minigeração distribuída?",
+    "coberta": true,
+    "resposta": "[1] [3] [4] [5]\n\nO Sistema de Compensação de Energia Elétrica (SCE) funciona da seguinte maneira:\n\n- A energia excedente gerada pela unidade consumidora com micro ou minigeração é injetada na rede da distribuidora, que armazena esse excedente até o momento em que a unidade consumidora necessite de energia proveniente da distribuidora.\n\n- Quando a edificação consome mais energia do que a gerada pelo sistema FV, fazendo com que, neste caso, o medidor registre o fluxo em seu sentido convencional (ver figura 5.22).\n\n- No fim do mês, se o balanço energético for positivo (consumidor gerou mais energia elétrica que a consumida), a distribuidora disponibilizará um crédito energético referente ao excedente.\n\n- Caso contrário, o consumidor pagará apenas a diferença entre a energia consumida e a gerada. Dependendo da forma de incidência dos impostos em cada Estado, o consumidor terá ainda que pagar os impostos (ICMS e PIS/COFINS) incidentes sobre o total da energia absorvida da rede.\n\n- Para unidades consumidoras conectadas em baixa tensão (grupo B), ainda que a energia injetada na rede seja superior ao consumo, será devido o pagamento referente ao custo de disponibilidade – valor em reais equivalente a 30 kWh (monofásico), 50 kWh (bifásico) ou 100 kWh (trifásico).\n\n- Para os consumidores conectados em alta tensão (grupo A) será devida apenas a parcela da fatura correspondente à demanda contratada.\n\n- Em regra, o consumo de energia elétrica a ser faturado corresponde à diferença entre a energia consumida e a injetada. E, havendo excedente de energia injetada que não tenha sido compensada no ciclo de faturamento corrente, a distribuidora utilizará essa diferença positiva para abater o consumo medido em outros postos tarifários, outras unidades consumidoras de mesmo titular ou nos meses subsequentes.",
+    "fontes": [
+      "[1] ANEEL (via Wayback Machine) — Cadernos Tematicos ANEEL - Micro e Minigeracao Distribuida / Sistema de Compensacao de Energia Eletrica",
+      "[2] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[3] ANEEL (via Wayback Machine) — Cadernos Tematicos ANEEL - Micro e Minigeracao Distribuida / Sistema de Compensacao de Energia Eletrica",
+      "[4] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[5] ANEEL (via Wayback Machine) — Cadernos Tematicos ANEEL - Micro e Minigeracao Distribuida / Sistema de Compensacao de Energia Eletrica"
+    ],
+    "fonte_top": "ANEEL (via Wayback Machine) (0.878)"
+  },
+  {
+    "n": 3,
+    "pergunta": "Que parâmetros o INI-C utiliza para avaliar a eficiência energética da envoltória de edificações comerciais?",
+    "coberta": true,
+    "resposta": "[1] [3] O INI-C utiliza os seguintes parâmetros para avaliar a eficiência energética da envoltória de edificações comerciais:\n\n[1] A classificação é realizada com base no consumo de energia primária, comparando-se o consumo da edificação real com a mesma edificação em uma condição de referência, equivalente à classificação D.\n\n[3] São descritos os critérios para a avaliação da eficiência energética da envoltória de edificações comerciais, de serviços e públicas quanto à determinação da carga térmica total anual para refrigeração.",
+    "fontes": [
+      "[1] INMETRO/PBE Edifica/PROCEL — INI-C - Instrucao Normativa Inmetro para Eficiencia Energetica de Edificacoes Comerciais, de Servicos e Publicas (Portaria 309/2022)",
+      "[2] INMETRO/PBE Edifica/PROCEL — INI-C - Instrucao Normativa Inmetro para Eficiencia Energetica de Edificacoes Comerciais, de Servicos e Publicas (Portaria 309/2022)",
+      "[3] INMETRO/PBE Edifica/PROCEL — INI-C - Instrucao Normativa Inmetro para Eficiencia Energetica de Edificacoes Comerciais, de Servicos e Publicas (Portaria 309/2022)",
+      "[4] INMETRO/PBE Edifica/PROCEL — INI-C - Instrucao Normativa Inmetro para Eficiencia Energetica de Edificacoes Comerciais, de Servicos e Publicas (Portaria 309/2022)",
+      "[5] INMETRO/PBE Edifica/PROCEL — INI-C - Instrucao Normativa Inmetro para Eficiencia Energetica de Edificacoes Comerciais, de Servicos e Publicas (Portaria 309/2022)"
+    ],
+    "fonte_top": "INMETRO/PBE Edifica/PROCEL (0.87)"
+  },
+  {
+    "n": 4,
+    "pergunta": "Quais são os principais componentes de um sistema fotovoltaico conectado à rede?",
+    "coberta": true,
+    "resposta": "[4] Sistemas Fotovoltaicos Conectados à Rede (SFCR) são constituídos por um bloco gerador, um bloco de condicionamento de potência e, opcionalmente, um bloco de armazenamento. O bloco gerador contém os arranjos fotovoltaicos, o cabeamento elétrico que os interliga e a estrutura de suporte. O bloco de condicionamento de potência pode ter conversores c.c.-c.c., seguidor de ponto de potência máxima (SPPM1), inversores, controladores de carga (se houver armazenamento) e outros dispositivos de proteção, supervisão e controle.",
+    "fontes": [
+      "[1] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[2] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[3] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[4] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[5] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos"
+    ],
+    "fonte_top": "CRESESB/CEPEL/Eletrobras (0.862)"
+  },
+  {
+    "n": 5,
+    "pergunta": "Quais medidas de conservação de água são recomendadas para reduzir o consumo em edificações?",
+    "coberta": true,
+    "resposta": "[4] [5] Para reduzir o consumo de água em edificações, são recomendadas várias medidas, incluindo a utilização de equipamentos hidrossanitários eficientes, a medição setorizada e a detecção e controle de perdas no sistema predial. Além disso, é importante garantir que estas soluções não causem risco à saúde dos usuários ou impactem o dia-a-dia. A implementação dessas medidas deve ser considerada desde as etapas de concepção e projeto até o uso, operação e manutenção da edificação, conforme destacado em [4] e [5].",
+    "fontes": [
+      "[1] CBIC — Guia Orientativo sobre Normas de Conservacao de Agua",
+      "[2] CBIC — Guia Orientativo sobre Normas de Conservacao de Agua",
+      "[3] FIESP/ANA/SindusCon-SP/COMASP — Conservacao e Reuso de Agua em Edificacoes",
+      "[4] CBIC — Guia Orientativo sobre Normas de Conservacao de Agua",
+      "[5] CBIC — Guia Orientativo sobre Normas de Conservacao de Agua"
+    ],
+    "fonte_top": "CBIC (0.878)"
+  },
+  {
+    "n": 6,
+    "pergunta": "O que a certificação GBC Brasil Casa avalia em relação ao uso da água e da energia?",
+    "coberta": true,
+    "resposta": "A certificação GBC Brasil Casa® avaliou o uso da água e da energia por meio dos seguintes créditos:\n\n[198] (Fonte: [4], seção 198 Certificação GBC Brasil Casa® Edição 2017)\n\nO crédito 198, chamado \"Média Básica de Energia\", atribui um ponto ao objetivo de garantir a gestão básica de energia através do rastreamento do uso de energia da residência e identificar oportunidades de melhoria da eficiência. Este crédito exige que as residências instalem medidores de energia para todas as fontes de energia utilizadas pela residência, além de comprometerem-se a compartilhar os dados de uso final de energia com o GBC Brasil no período de pelo menos 5 anos.\n\n[360] (Fonte: [3], seção 360 Certificação GBC Brasil Casa® Edição 2017)\n\nO pré-requisito PR1, chamado \"Manual de Operação, Uso e Manutenção\", também abrange a questão do uso da água e energia. Este requisito exige que o manual de operação inclua informações sobre como usar eficientemente a água e energia na residência, bem como guias especializados para os equipamentos instalados que requerem cuidado específico com o uso de recursos naturais.\n\nPortanto, esses créditos e pré-requisitos avaliam diretamente o desempenho da gestão de água e energia em residências certificadas GBC Brasil Casa®.",
+    "fontes": [
+      "[1] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[2] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[3] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[4] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[5] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)"
+    ],
+    "fonte_top": "GBC Brasil (0.893)"
+  },
+  {
+    "n": 7,
+    "pergunta": "Como o guia da CBIC trata o desempenho dos sistemas hidrossanitários segundo a NBR 15575?",
+    "coberta": true,
+    "resposta": "[3] (Fonte: CBIC — Guia Orientativo sobre Normas de Conservacao de Agua, 2019; seção: CAPÍTULO 2) O guia da CBIC trata o desempenho dos sistemas hidrossanitários segundo a NBR 15575 em sua segunda edição. Este capítulo aborda especificamente as normas ABNT NBR 15575/2013 e apresenta detalhes sobre como essa norma se aplica aos sistemas de água sanitária nas edificações. O guia fornece exemplos, destaques e pontos das normas relevantes para a compreensão do desempenho dos sistemas hidrossanitários conforme NBR 15575/2013.",
+    "fontes": [
+      "[1] CBIC (via Wayback Machine) — Guia Orientativo para Atendimento a Norma ABNT NBR 15575 (2a edicao)",
+      "[2] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[3] CBIC — Guia Orientativo sobre Normas de Conservacao de Agua",
+      "[4] CBIC (via Wayback Machine) — Guia Orientativo para Atendimento a Norma ABNT NBR 15575 (2a edicao)",
+      "[5] CBIC (via Wayback Machine) — Guia Orientativo para Atendimento a Norma ABNT NBR 15575 (2a edicao)"
+    ],
+    "fonte_top": "CBIC (via Wayback Machine) (0.863)"
+  },
+  {
+    "n": 8,
+    "pergunta": "Quais indicadores de eficiência energética o Atlas da Eficiência Energética da EPE acompanha?",
+    "coberta": false,
+    "resposta": "A informação não está no corpus consultado.",
+    "fontes": [
+      "[1] CBCS/MMA/PNUMA — Aspectos da Construcao Sustentavel no Brasil e Promocao de Politicas Publicas",
+      "[2] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[3] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[4] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[5] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)"
+    ],
+    "fonte_top": "CBCS/MMA/PNUMA (0.863)"
+  },
+  {
+    "n": 9,
+    "pergunta": "Qual é o limiar exato de pontos do crédito de eficiência hídrica da certificação LEED v4.1 BD+C?",
+    "coberta": false,
+    "resposta": "A informação não está no corpus consultado.",
+    "fontes": [
+      "[1] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[2] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[3] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[4] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[5] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)"
+    ],
+    "fonte_top": "GBC Brasil (0.859)"
+  },
+  {
+    "n": 10,
+    "pergunta": "Qual o custo médio, em reais por kWp, de um sistema fotovoltaico residencial instalado no Brasil em 2024?",
+    "coberta": false,
+    "resposta": "A informação não está no corpus consultado.",
+    "fontes": [
+      "[1] GBC Brasil — Guia de Certificacao GBC Brasil Casa (Edicao 2017)",
+      "[2] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[3] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[4] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos",
+      "[5] CRESESB/CEPEL/Eletrobras — Manual de Engenharia para Sistemas Fotovoltaicos"
+    ],
+    "fonte_top": "GBC Brasil (0.872)"
+  }
+]

@@ -1,0 +1,34 @@
+# ── Extração de texto ────────────────────────────────────────────
+pypdf
+pdfplumber          # tabelas e layout de PDFs técnicos
+python-docx         # .docx
+beautifulsoup4      # .html
+lxml
+
+# ── Pré-processamento / normalização ─────────────────────────────
+ftfy                # conserta encoding quebrado (mojibake)
+Unidecode
+regex
+tiktoken            # contagem de tokens para o chunking
+
+# ── Embeddings ───────────────────────────────────────────────────
+sentence-transformers
+torch                # build CPU (default no Windows via PyPI)
+
+# ── Banco vetorial ───────────────────────────────────────────────
+chromadb            # persistência em disco + filtro por metadados
+
+# ── RAG / LLM local ──────────────────────────────────────────────
+ollama              # client Python do Ollama
+requests
+
+# ── Avaliação / visualização ─────────────────────────────────────
+scikit-learn        # t-SNE
+matplotlib
+pandas
+numpy
+tqdm
+
+# ── Notebook ─────────────────────────────────────────────────────
+jupyter
+ipykernel

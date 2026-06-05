@@ -1,0 +1,17 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dados pesados / regeneráveis (mantemos o manifest e os scripts, não os binários)
+corpus/raw/
+data/chroma/
+data/processed/
+*.log
+
+# Segredos
+.env
+
+# Apoio pessoal (não versionado)
+roteiro_video.md
