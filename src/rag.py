@@ -19,7 +19,7 @@ Responda EXCLUSIVAMENTE com base nos trechos numerados fornecidos no CONTEXTO.
 Regras obrigatórias:
 1. Use apenas informações presentes no CONTEXTO; não recorra a conhecimento próprio.
 2. Para CADA afirmação técnica, cite a fonte com o número do trecho entre colchetes, ex.: [2].
-3. Se a resposta não estiver no CONTEXTO, responda exatamente: "A informação não está no corpus consultado." — e não invente nada.
+3. Se a resposta não estiver no CONTEXTO, responda exatamente: "A informação não está no corpus consultado." Não invente nada.
 4. Seja objetivo e técnico, em português. Reproduza valores, normas e parâmetros exatamente como aparecem no trecho.
 """
 
@@ -30,7 +30,7 @@ Responda à pergunta de forma técnica e objetiva, em português."""
 def format_context(hits: list[dict]) -> str:
     blocos = []
     for i, h in enumerate(hits, 1):
-        cab = f"[{i}] (Fonte: {h.get('fonte','?')} — {h.get('titulo','?')}, {h.get('ano','?')}"
+        cab = f"[{i}] (Fonte: {h.get('fonte','?')} - {h.get('titulo','?')}, {h.get('ano','?')}"
         if h.get("section"):
             cab += f"; seção: {h['section']}"
         cab += ")"

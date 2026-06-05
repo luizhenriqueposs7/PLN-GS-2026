@@ -34,7 +34,7 @@ Este notebook percorre as 8 etapas do desafio:
 """)
 
 # Etapa 1
-md("""## Etapa 1 — Planejamento e escopo
+md("""## Etapa 1: Planejamento e escopo
 
 **Recorte temático.** O título do desafio é *"edifícios eficientes quanto a água e energia"*, e o enunciado pede que as documentações orientem como **coletar e tratar água localmente** e **gerar energia** (fotovoltaica ou outra), de modo que o edifício supra metade ou toda a sua demanda. Por isso o recorte adotado é **abrangente: Energia + Água + Certificações**, tratando as certificações como eixo transversal que conecta os dois temas. Cada documento é rotulado com a subcategoria `energia`, `agua` ou `ambos`.
 
@@ -93,7 +93,7 @@ print("Modelo de embedding:", eidx.EMBED_MODEL)
 """)
 
 # Etapa 2
-md("""## Etapa 2 — Construção do corpus
+md("""## Etapa 2: Construção do corpus
 
 Foram reunidos **12 documentos técnicos** (acima do mínimo de 10), todos **abertos e gratuitos**, cobrindo as **3 categorias** exigidas e os **2 eixos** (energia/água):
 
@@ -120,7 +120,7 @@ corpus_io.download_manifest(manifest, RAW)
 """)
 
 # Etapa 3
-md("""## Etapa 3 — Limpeza e normalização
+md("""## Etapa 3: Limpeza e normalização
 
 Para cada documento (`src/textproc.py`):
 1. **Extração** do texto (pdfplumber p/ PDF; também DOCX/HTML/TXT).
@@ -156,7 +156,7 @@ print(amostra["text"][:900])
 """)
 
 # Etapa 4
-md("""## Etapa 4 — Segmentação (chunking)
+md("""## Etapa 4: Segmentação (chunking)
 
 Segmentação semântica (`src/chunking.py`) com alvo de **512 a 1024 tokens** (contados com `tiktoken`, como aproximação independente do tokenizer do modelo). Os chunks **quebram nos títulos** (Capítulo, Seção, Art. N, Crédito N, títulos numerados, linhas em CAIXA ALTA) para não cortar uma seção/artigo/crédito ao meio, e **nunca fragmentam um bloco** (parágrafo, tabela ou lista); só dividem por frases um bloco que sozinho exceda o limite.
 """)
@@ -201,7 +201,7 @@ print(ex["text"][:700])
 """)
 
 # Etapa 5
-md("""## Etapa 5 — Geração de embeddings e indexação (ChromaDB)
+md("""## Etapa 5: Geração de embeddings e indexação (ChromaDB)
 
 Geramos embeddings de **todos os chunks** com o `multilingual-e5-base` (prefixo `passage:`) e indexamos no **ChromaDB persistente** (`data/chroma`), com **métrica de cosseno** e os **metadados** de cada chunk gravados junto ao vetor, o que habilita o **filtro por categoria/subcategoria** na busca.
 """)
@@ -211,7 +211,7 @@ print("Chunks indexados no ChromaDB:", col.count())
 """)
 
 # Etapa 6
-md("""## Etapa 6 — Pipeline RAG com LLM local
+md("""## Etapa 6: Pipeline RAG com LLM local
 
 A busca recupera os *top-k* trechos, que viram um **CONTEXTO numerado**. O **prompt de sistema** (abaixo) obriga o modelo a responder **somente** com base nesses trechos e a **citar a fonte** de cada informação com o número entre colchetes; se a resposta não estiver no contexto, ele deve dizer que *"a informação não está no corpus consultado"*.
 """)
@@ -223,7 +223,7 @@ print("PERGUNTA:", out["question"], "\\n")
 print("RESPOSTA:\\n", out["answer"], "\\n")
 print("FONTES RECUPERADAS:")
 for s in out["sources"]:
-    print(f"  [{s['n']}] {s['fonte']} — {s['titulo']} ({s['ano']}) | score={s['score']} | {s['categoria']}/{s['subcategoria']}")
+    print(f"  [{s['n']}] {s['fonte']}, {s['titulo']} ({s['ano']}) | score={s['score']} | {s['categoria']}/{s['subcategoria']}")
 """)
 
 code("""# Busca com FILTRO por metadados (só documentos do eixo 'energia')
@@ -232,11 +232,11 @@ out_f = rag.answer_rag(col, "Como funciona a compensação de energia da micro e
 print(out_f["answer"], "\\n")
 print("Fontes (todas do eixo energia):")
 for s in out_f["sources"]:
-    print(f"  [{s['n']}] {s['fonte']} — {s['subcategoria']}")
+    print(f"  [{s['n']}] {s['fonte']}, {s['subcategoria']}")
 """)
 
 # Etapa 7
-md("""## Etapa 7 — Avaliação do sistema
+md("""## Etapa 7: Avaliação do sistema
 
 **10 perguntas técnicas** sobre o corpus. Para cada uma registramos a resposta do RAG e as **fontes citadas**. Incluímos propositalmente 2 perguntas **fora da cobertura** do corpus (ex.: limiares específicos do LEED, preços de mercado) para verificar se o sistema **admite a ausência** em vez de alucinar. Isso alimenta a métrica de *cobertura* do relatório. Em seguida, comparamos **3 respostas** com o **mesmo LLM sem RAG**.
 """)
@@ -263,7 +263,7 @@ for i, p in enumerate(PERGUNTAS, 1):
     resultados.append({
         "n": i, "pergunta": p["q"], "coberta": coberta,
         "resposta": r["answer"],
-        "fontes": [f"[{s['n']}] {s['fonte']} — {s['titulo']}" for s in r["sources"]],
+        "fontes": [f"[{s['n']}] {s['fonte']}, {s['titulo']}" for s in r["sources"]],
         "fonte_top": f"{r['sources'][0]['fonte']} ({r['sources'][0]['score']})" if r["sources"] else "",
     })
     print(f"\\n{'='*78}\\nQ{i}. {p['q']}\\n{'-'*78}")
@@ -301,7 +301,7 @@ for p in [x for x in PERGUNTAS if x["comparar"]]:
 """)
 
 # Etapa 8
-md("""## Etapa 8 — Visualização t-SNE e relatório crítico
+md("""## Etapa 8: Visualização t-SNE e relatório crítico
 
 Projeção **t-SNE** dos embeddings dos chunks em 2D, colorida por **categoria** e por **subcategoria**, para inspecionar se trechos do mesmo tipo formam **clusters** coerentes no espaço vetorial.
 """)
@@ -323,7 +323,7 @@ for ax, labels, titulo in [(axes[0], cats, "por categoria"), (axes[1], subs, "po
     for lab in sorted(set(labels)):
         m = [l == lab for l in labels]
         ax.scatter(emb2d[m, 0], emb2d[m, 1], s=12, alpha=0.6, label=lab)
-    ax.set_title(f"t-SNE dos chunks — {titulo}"); ax.legend(fontsize=8); ax.set_xticks([]); ax.set_yticks([])
+    ax.set_title(f"t-SNE dos chunks, {titulo}"); ax.legend(fontsize=8); ax.set_xticks([]); ax.set_yticks([])
 plt.tight_layout(); plt.savefig(REPORTS / "tsne.png", dpi=110); plt.show()
 """)
 
@@ -361,7 +361,7 @@ print("PERGUNTA:", pergunta, "\\n")
 print("RESPOSTA:\\n", resp["answer"], "\\n")
 print("FONTES:")
 for s in resp["sources"]:
-    print(f"  [{s['n']}] {s['fonte']} — {s['titulo']} ({s['ano']})")
+    print(f"  [{s['n']}] {s['fonte']}, {s['titulo']} ({s['ano']})")
 """)
 
 if __name__ == "__main__":
